@@ -7,14 +7,14 @@ require('dotenv').config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const JWT_SECRET = process.env.JWT_SECRET || 'your-secret-key';
+const JWT_SECRET = process.env.JWT_SECRET || '30c5bdb4b8f0c58a4a52e1363da47212';
 
 // Middleware
 app.use(cors());
 app.use(express.json());
 
 // Connect to MongoDB (we'll use MongoDB Atlas free tier)
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/recipe-saas', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://papitainerixix_db_user:dQx7PpWRaPKcbp51@cluster1.mqsijhf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
