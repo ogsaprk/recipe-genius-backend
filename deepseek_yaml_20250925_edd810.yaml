@@ -1,14 +1,8 @@
 services:
   - type: web
-    name: recipe-saas-backend
+    name: recipe-genius-backend
     env: node
     plan: free
-    buildCommand: npm install
-    startCommand: npm start
-    envVars:
-      - key: MONGODB_URI
-        fromDatabase:
-          name: recipe-saas-db
-          property: connectionString
-      - key: JWT_SECRET
-        generateValue: true
+    buildCommand: cd recipe-genius && npm install
+    startCommand: cd recipe-genius && npm start
+    rootDir: recipe-genius
