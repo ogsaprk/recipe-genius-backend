@@ -5,4 +5,3 @@ services:
     plan: free
     buildCommand: cd recipe-genius && npm install
     startCommand: cd recipe-genius && npm start
-    rootDir: recipe-genius
