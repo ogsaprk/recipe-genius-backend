@@ -1,5 +1,5 @@
 {
-  "name": "recipe-saas-backend",
+  "name": "recipe-genius-backend",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
@@ -13,5 +13,9 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^7.5.0",
     "dotenv": "^16.3.1"
+  },
+  "engines": {
+    "node": "18.x",
+    "npm": "9.x"
   }
 }
