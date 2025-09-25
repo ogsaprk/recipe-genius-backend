@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: recipe-saas-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: MONGODB_URI
+        fromDatabase:
+          name: recipe-saas-db
+          property: connectionString
+      - key: JWT_SECRET
+        generateValue: true
